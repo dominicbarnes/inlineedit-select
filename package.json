@@ -1,6 +1,6 @@
 {
   "name": "inlineedit-select",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An inlineedit extension that uses a select input for predefined options",
   "main": "index.js",
   "directories": {
