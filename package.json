@@ -1,0 +1,37 @@
+{
+  "name": "inlineedit-select",
+  "version": "0.0.1",
+  "description": "An inlineedit extension that uses a select input for predefined options",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rm -rf build",
+    "distclean": "rm -rf components node_modules",
+    "deps": "component install --dev",
+    "build": "component build --dev",
+    "test": "component test phantom",
+    "start": "component serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dominicbarnes/inlineedit-select.git"
+  },
+  "author": "Dominic Barnes <dominic@dbarnes.info>",
+  "homepage": "https://github.com/dominicbarnes/inlineedit-select",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominicbarnes/inlineedit-select/issues"
+  },
+  "keywords": [
+    "inlineedit",
+    "select",
+    "browser"
+  ],
+  "devDependencies": {
+    "component": "^0.19.7",
+    "component-test": "^0.1.3",
+    "component-serve": "^0.5.2"
+  }
+}
