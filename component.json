@@ -1,0 +1,16 @@
+{
+  "name": "inlineedit-select",
+  "version": "0.0.0",
+  "dependencies": {
+    "component/type": "*",
+    "dominicbarnes/inlineedit": "*",
+    "manuelstofer/foreach": "*",
+    "yields/some": "*"
+  },
+  "development": {
+    "dominicbarnes/expect.js": "*"
+  },
+  "scripts": [
+    "index.js"
+  ]
+}

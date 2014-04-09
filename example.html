@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inline Edit :: Select :: Examples</title>
+        <link rel="stylesheet" href="build/build.css">
+        <style>
+            .inlineedit-content:hover {
+                background-color: #feffe1;
+            }
+
+            .inlineedit-spinner {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gender-array">Female</div>
+        <div id="gender-object">Female</div>
+        <div id="gender-verbose">Female</div>
+        <div id="gender-slightlyverbose">Female</div>
+        <div id="gender-options">Female</div>
+
+        <script src="build/build.js"></script>
+        <script>
+            var InlineEditSelect = require("inlineedit-select");
+
+            var inst1 = new InlineEditSelect({
+                element: "#gender-array",
+                options: [ "Male", "Female" ],
+                submitForm: submit
+            });
+
+            var inst2 = new InlineEditSelect({
+                element: "#gender-object",
+                options: {
+                    M: "Male",
+                    F: "Female"
+                },
+                submitForm: submit
+            });
+
+            var inst3 = new InlineEditSelect({
+                element: "#gender-verbose",
+                options: [
+                    {
+                        label: "Male",
+                        value: "M"
+                    },
+                    {
+                        label: "Female",
+                        value: "F"
+                    }
+                ],
+                submitForm: submit
+            });
+
+            var inst4 = new InlineEditSelect({
+                element: "#gender-slightlyverbose",
+                options: [
+                    { value: "Male" },
+                    { value: "Female" }
+                ],
+                submitForm: submit
+            });
+
+            var inst4 = new InlineEditSelect({
+                element: "#gender-options",
+                options: [
+                    new Option("Female", "F"),
+                    new Option("Male", "M")
+                ],
+                submitForm: submit
+            });
+
+            function submit(val, done) {
+                setTimeout(done, 1000);
+            }
+        </script>
+    </body>
+</html>
