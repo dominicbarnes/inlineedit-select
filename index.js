@@ -118,7 +118,7 @@ module.exports = InlineEdit.extend({
      * Set the <select> value based on the selectedIndex
      */
     populateForm: function (val, form) {
-        form.elements[0].value = val.value || val.label;
+        form.elements.item(0).value = val.value || val.label;
     },
 
     /**
@@ -128,7 +128,7 @@ module.exports = InlineEdit.extend({
      * @see InlineEdit#processForm()
      */
     processForm: function (form) {
-        return this.options[form.elements[0].selectedIndex];
+        return this.options[form.elements.item(0).selectedIndex];
     },
 
     /**
