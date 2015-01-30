@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "dependencies": {
     "component/type": "*",
-    "dominicbarnes/inlineedit": "*",
+    "treetopllc/inlineedit": "0.0.8",
     "manuelstofer/foreach": "*",
     "yields/some": "*"
   },
