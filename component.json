@@ -1,6 +1,6 @@
 {
   "name": "inlineedit-select",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "component/type": "*",
     "treetopllc/inlineedit": "0.0.8",
